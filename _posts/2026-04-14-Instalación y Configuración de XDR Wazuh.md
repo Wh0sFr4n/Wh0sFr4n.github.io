@@ -1,5 +1,5 @@
 ---
-title: Instalación y Configuración de XDR Wazuh
+title: Implementación y Configuración de XDR Wazuh
 featured_image: assets/Instalacion Wazuh/Portada.png
 date: 2026-04-14 00:00:00
 categories: [Blue Team]
