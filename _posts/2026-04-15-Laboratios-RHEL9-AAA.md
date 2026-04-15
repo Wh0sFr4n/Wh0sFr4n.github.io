@@ -1,11 +1,11 @@
 ---
-title: Laboratorios sobre administración de Red Hat Enterprise Linux 9 e implementación de servidor AAA utilizando FreeRadius.
-date: 2026-04-14 00:00:01
+title: Laboratorios de Red Hat Enterprise Linux 9 y AAA utilizando FreeRadius.
+date: 2026-04-15 00:00:01
 categories: [Networking] [OS]
 tags: [Active Directory]
 ---
 
-# Laboratorios sobre administración de Red Hat Enterprise Linux 9 e 
+# Laboratorios de Red Hat Enterprise Linux 9 y AAA utilizando FreeRadius
 
 Cree una serie de videos documentando la configuración básica de servidores red hat linux (Gestión de usuarios, parametros de red, uso de cron, ssh, servidor HTTP, correos, impresión, etc.).
 
