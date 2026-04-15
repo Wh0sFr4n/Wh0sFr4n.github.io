@@ -1,6 +1,6 @@
 ---
 title: Ataques de capa L2 y L3 Parte 2
-date: 2026-04-14 00:00:00
+date: 2026-04-14 00:00:01
 categories: [Networking]
 tags: [Networking]
 ---
@@ -14,7 +14,7 @@ vulnerabilidades pueden ser explotadas y medidas para poder mitigarlas.
 
 # Objetivo
 
-El objetivo de este laboratorio es,como mencioné en la parte anterior, conocer ataques y amenazas a las que se puede enfrentan una red empresarial si no se configura con la debida seguridad, así como aprender técnicas o métodos en los que podemos mitigar dichos ataques.
+El objetivo de este proyecto es,como mencioné en la parte anterior, conocer ataques y amenazas a las que se puede enfrentan una red empresarial si no se configura con la debida seguridad, así como aprender técnicas o métodos en los que podemos mitigar dichos ataques.
 
 # Topología
 
