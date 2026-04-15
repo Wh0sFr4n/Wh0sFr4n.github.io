@@ -18,9 +18,9 @@ El objetivo de este laboratorio es,como mencioné en la parte anterior, conocer 
 
 # Topología
 
-![alt text](assets\Images_L2_L3_part2\image-1.png)
+![alt text](assets/Images_L2_L3_part2/image-1.png)
 
-![alt text](assets\Images_L2_L3_part2\image-2.png)
+![alt text](assets/Images_L2_L3_part2/image-2.png)
 
 # Herramientas y parámetros utilizados
 
@@ -54,25 +54,25 @@ El ataque consiste en que nosotros como atacantes inundamos el servidor DHCP con
 Desde nuestra máquina atacante podemos comprobar que estamos dentro del rango de la
 red:
 
-![alt text](assets\Images_L2_L3_part2\image-3.png)
+![alt text](assets/Images_L2_L3_part2/image-3.png)
 
 Iniciamos Yersinia:
 
-![alt text](assets\Images_L2_L3_part2\image-4.png)
+![alt text](assets/Images_L2_L3_part2/image-4.png)
 
 Elegimos dhcp y ejecutamos el ataque:
 
-![alt text](assets\Images_L2_L3_part2\image-5.png)
+![alt text](assets/Images_L2_L3_part2/image-5.png)
 
-![alt text](assets\Images_L2_L3_part2\image-6.png)
+![alt text](assets/Images_L2_L3_part2/image-6.png)
 
-![alt text](assets\Images_L2_L3_part2\image-7.png)
+![alt text](assets/Images_L2_L3_part2/image-7.png)
 
-![alt text](assets\Images_L2_L3_part2\image-8.png)
+![alt text](assets/Images_L2_L3_part2/image-8.png)
 
 Resultado del ataque:
 
-![alt text](assets\Images_L2_L3_part2\image-9.png)
+![alt text](assets/Images_L2_L3_part2/image-9.png)
 
 ## Rogue DHCP Attack
 
@@ -80,14 +80,14 @@ Este ataque consiste en configurar un servidor DHCP falso en una red para asigna
 
 Dentro de Ettercap seleccionamos esta opción y configuramos la información del server:
 
-![alt text](assets\Images_L2_L3_part2\image-10.png)
+![alt text](assets/Images_L2_L3_part2/image-10.png)
 
-![alt text](assets\Images_L2_L3_part2\image-11.png)
+![alt text](assets/Images_L2_L3_part2/image-11.png)
 
 Luego de iniciar el ataque, si intentamos añadir un equipo a la red, este tomará una IP de
 nuestro dhcp server en lugar del legitimo:
 
-![alt text](assets\Images_L2_L3_part2\image-12.png)
+![alt text](assets/Images_L2_L3_part2/image-12.png)
 
 ## STP Claim Root Attack
 
@@ -95,16 +95,16 @@ Consiste en enviar BPDUs falsificadas con prioridad baja para que nuestro equipo
 
 Antes de realizar el ataque, al ejecutar el comando show spanning-tree podemos confirmas que este el root actual:
 
-![alt text](assets\Images_L2_L3_part2\image-13.png)
+![alt text](assets/Images_L2_L3_part2/image-13.png)
 
 En la máquina atacante elegimos la opción 4 para iniciar el ataque:
 
-![alt text](assets\Images_L2_L3_part2\image-14.png)
+![alt text](assets/Images_L2_L3_part2/image-14.png)
 
 Y luego de un momento si volvemos a confirmar en el sw, veremos que ya este no es el root
 bridge indicando que el ataque se realizó exitosamente:
 
-![alt text](assets\Images_L2_L3_part2\image-15.png)
+![alt text](assets/Images_L2_L3_part2/image-15.png)
 
 # Medidas de mitigación
 

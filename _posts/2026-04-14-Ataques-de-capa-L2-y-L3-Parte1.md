@@ -15,10 +15,10 @@ El objetivo de la realización de los ataques a continuación es conocer ataques
 
 # Topologia 
 
-![Image](\assets\Images_L2_L3_part1\image-1.png)
+![Image](/assets/Images_L2_L3_part1/image-1.png)
 
 
-![alt text](assets\Images_L2_L3_part1\image-2.png)
+![alt text](assets/Images_L2_L3_part1/image-2.png)
 
 # Herramientas y Parámetros utilizados
 
@@ -69,40 +69,40 @@ En esta demostración se utilizaron dos dispositivos finales (un atacante y una 
 se verificó la IP de la máquina victima y se utilizó el comando traceroute para identificar la ruta
 que seguirían los paquetes dirigidos un destino externo (8.8.8.8):
 
-![alt text](assets\Images_L2_L3_part1\image-3.png)
+![alt text](assets/Images_L2_L3_part1/image-3.png)
 
-![alt text](assets\Images_L2_L3_part1\image-4.png)
+![alt text](assets/Images_L2_L3_part1/image-4.png)
 
 Luego, se verificó la IP de la máquina atacante, comprobando que se encuentra en mismo rango
 que la victima:
 
-![alt text](assets\Images_L2_L3_part1\image-5.png)
+![alt text](assets/Images_L2_L3_part1/image-5.png)
 
 Desde la máquina atacante se inició la herramienta bettercap con permisos privilegiados y luego
 se utilizaron los comandos “net.probe on” y “ticker on” para identificar dispositivos activos en la
 red y organizar la información recolectada respectivamente:
 
-![alt text](assets\Images_L2_L3_part1\image-6.png)
+![alt text](assets/Images_L2_L3_part1/image-6.png)
 
-![alt text](assets\Images_L2_L3_part1\image-7.png)
+![alt text](assets/Images_L2_L3_part1/image-7.png)
 
-![alt text](assets\Images_L2_L3_part1\image-8.png)
+![alt text](assets/Images_L2_L3_part1/image-8.png)
 
 pues se utilizó “set arp.spoof.targets 10.8.55.4” para indicar que la .4 sería nuestra victima y
 “arp.spoof on” para iniciar el ataque:
 
-![alt text](assets\Images_L2_L3_part1\image-9.png)
+![alt text](assets/Images_L2_L3_part1/image-9.png)
 
 Una vez iniciado el ataque, utilizando wireshark se pudo identificar el tráfico ARP enviado desde
 la máquina atacante reclamando la IP del router de la red y pasando su MAC address.
 
-![alt text](assets\Images_L2_L3_part1\image-10.png)
+![alt text](assets/Images_L2_L3_part1/image-10.png)
 
 Por último, se pudo confirmar que el ataque se realizó exitosamente al volver a realizar un
 traceroute, esta vez con la diferencia de que antes de llegar al router, el tráfico de la victima pasa
 por nuestra máquina atacante:
 
-![alt text](assets\Images_L2_L3_part1\image-11.png)
+![alt text](assets/Images_L2_L3_part1/image-11.png)
 
 ## DoS mediante CDP Flooding
 
@@ -114,16 +114,16 @@ generando un consumo excesivo de CPU/memoria causando así denegación de servic
 Para realizar este ataque, desde la máquina atacante se inició la heramienta yersinia desde el
 modo interactivo:
 
-![alt text](assets\Images_L2_L3_part1\image-12.png)
+![alt text](assets/Images_L2_L3_part1/image-12.png)
 
 Luego, se presiona la letra G para elegir el protocolo, en este caso se seleccionó CDP:
 
-![alt text](assets\Images_L2_L3_part1\image-13.png)
+![alt text](assets/Images_L2_L3_part1/image-13.png)
 
 Se presiona la letra X para entrar al panel de ataque y luego la tecla 1 para iniciar el ataque CDP
 flooding:
 
-![alt text](assets\Images_L2_L3_part1\image-14.png)
+![alt text](assets/Images_L2_L3_part1/image-14.png)
 
 Despues de iniciar el ataque, si abrimos wireshark podemos ver el tráfico CDP enviado:
 
@@ -133,7 +133,7 @@ Por último, al acceder al switch de la red podemos ver que nos muestra el sigui
 nos indica un uso intensivo de la CPU y por mas que intentamos acceder a la terminal el
 dispositivo simplemente no responde.
 
-![alt text](assets\Images_L2_L3_part1\image-16.png)
+![alt text](assets/Images_L2_L3_part1/image-16.png)
 
 # Medidas de mitigación
 
