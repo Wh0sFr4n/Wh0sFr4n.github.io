@@ -127,7 +127,7 @@ flooding:
 
 Despues de iniciar el ataque, si abrimos wireshark podemos ver el tráfico CDP enviado:
 
-![alt text](image-15.png)
+![alt text](assets/Images_L2_L3_part1/image-15.png)
 
 Por último, al acceder al switch de la red podemos ver que nos muestra el siguiente mensaje, que
 nos indica un uso intensivo de la CPU y por mas que intentamos acceder a la terminal el
