@@ -4,5 +4,6 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+# Hola! Soy Fr4n
+
+Mi nombre es Franklin Polanco, soy estudiante de seguridad informática. Aquí documento proyectos que considero interesantes sobre redes y seguridad defensiva. 
